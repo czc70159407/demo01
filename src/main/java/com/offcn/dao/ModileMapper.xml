@@ -10,6 +10,11 @@
 		select count(1) from mobile
 	</select>
 	
+	<select id="getResult" parameterType="java.lang.String" resultType="com.offcn.po.Result">
+		SELECT mobilearea,mobiletype FROM mobile WHERE mobilenum ='${value}' 
+	</select>
+	
+	
 
 </mapper>
 

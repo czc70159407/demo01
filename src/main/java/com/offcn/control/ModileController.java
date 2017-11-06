@@ -3,7 +3,9 @@ package com.offcn.control;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.offcn.service.ModileService;
 
@@ -14,8 +16,9 @@ public class ModileController {
 	ModileService modileService;
 	
 	@RequestMapping
-	public void stt(){
-		
-		
+	public String stt(Model model,@RequestParam(value="tel")String tel){
+		String msg = modileService.getArea(tel);
+		model.addAttribute("msg", msg);
+		return "view/result";
 	}
 }
