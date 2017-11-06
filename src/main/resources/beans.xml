@@ -58,4 +58,6 @@
    	   <aop:advisor advice-ref="txAdvice" pointcut-ref="point"/>
    	</aop:config> 
    	
+   	<import resource="cxf-servlet.xml"/>
+   	
 </beans>

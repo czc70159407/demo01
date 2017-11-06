@@ -254,6 +254,26 @@
 			<artifactId>poi-examples</artifactId>
 			<version>3.16</version>
 		</dependency>
+
+		<!-- webService -->
+
+		<dependency>
+			<groupId>javax.xml.ws</groupId>
+			<artifactId>jaxws-api</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>3.1.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>3.1.11</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

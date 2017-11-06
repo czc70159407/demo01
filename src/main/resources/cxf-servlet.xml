@@ -11,10 +11,10 @@ http://cxf.apache.org/schemas/jaxws.xsd">
 	<!-- 创建入门服务 bean -->
 	<!-- <bean id="helloCXFService" class="com.offcn.web.HelloWorldImple" /> -->
 	<!-- 注册 Web Service 服务，注册地址为/hello -->
-	<!-- <jaxws:server id="cxfService" address="/hello">
-		注册服务 bean
+	 <jaxws:server id="cxfService" address="/hello">
+		<!-- 注册服务 bean -->
 		<jaxws:serviceBean>
-			<ref bean="helloCXFService" />
+			<ref bean="modileServiceImp" />
 		</jaxws:serviceBean>
-	</jaxws:server> -->
+	</jaxws:server> 
 </beans>

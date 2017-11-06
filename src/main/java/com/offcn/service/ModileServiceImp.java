@@ -1,12 +1,15 @@
 package com.offcn.service;
 
 import javax.annotation.Resource;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 
 import org.springframework.stereotype.Service;
 
 import com.offcn.dao.ModileMapper;
 import com.offcn.po.Result;
 @Service
+@WebService
 public class ModileServiceImp implements ModileService{
 		@Resource
 		ModileMapper modileMapper;
@@ -15,7 +18,8 @@ public class ModileServiceImp implements ModileService{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+	
+	@WebMethod
 	public String getArea(String tel) {
 		// TODO Auto-generated method stub
 		String area=null;
